@@ -1,0 +1,93 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300;800&display=swap');
+*{
+	margin:0;
+	border:0;
+	padding: 0;
+	box-sizing: border-box;
+	scroll-behavior: smooth;
+  	outline:none;
+}
+
+body{
+	width: 100%;
+	background-color: rgb(221, 221, 221);
+}
+header,ul,.card-content{
+	width: 90%;
+	margin: 0 auto;
+	text-align: center;
+	overflow: hidden;
+}
+header{
+	font-size: 3rem;
+	font-family: 'Raleway', sans-serif;
+	font-weight: 800;
+	margin-top: 1rem;
+}
+input[type=text]{
+	padding: .5rem;
+	display: block; 
+	margin:auto;
+	margin-top: 2rem;
+}
+ul{
+	list-style: none;
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: center;
+	gap: 20px;
+	font-size: 1.1rem;
+	margin: 2rem;
+	font-family: 'Raleway', sans-serif;
+}
+
+ul li{
+	background-color: rgb(255, 255, 255);
+	padding: 1rem;
+	cursor: pointer;
+}
+
+.active{
+	border:4px solid rgb(165, 165, 165);
+	transition: .4s ease;
+}
+.card-content figure{
+	margin: 2rem;
+	background-color: rgb(255, 255, 255);
+	box-shadow: 10px 10px 9px -6px rgba(0,0,0,0.32);
+	-webkit-box-shadow: 10px 10px 9px -6px rgba(0,0,0,0.32);
+	-moz-box-shadow: 10px 10px 9px -6px rgba(0,0,0,0.32);
+	font-family: 'Raleway', sans-serif;
+}
+.card-content figure img{
+	width: 100%;
+}
+
+.card-content figure figcaption{
+	padding: 2rem 0 2rem 0;
+}
+
+.card-content figure figcaption > *{
+	padding: .5rem;
+}
+
+@media screen and (min-width:600px){
+	.card-content{
+		display: grid;
+		grid-template-columns: repeat(2, minmax(0, 1fr));
+	}
+}
+
+@media screen and (min-width:750px){
+	.card-content{
+		display: grid;
+		grid-template-columns: repeat(3, minmax(0, 1fr));
+	}
+}
+
+@media screen and (min-width:900px){
+	.card-content{
+		display: grid;
+		grid-template-columns: repeat(4, minmax(0, 1fr));
+	}
+}
