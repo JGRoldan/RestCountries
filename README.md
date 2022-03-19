@@ -2,7 +2,7 @@
 _It's my first time use an API._
 
 - It's designed with filter button by regions and filter input by countries.
-- it's a responsive design.
+- Mobile first.
 
 ## Capture
 #### Desktop
